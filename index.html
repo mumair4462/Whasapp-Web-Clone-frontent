@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/whatsapp.ico" type="image/x-icon">
+    <title>WhatsApp Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <script src="js/script.js"></script> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main-part show_item">
+            <div class="main-manue manue">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+
+                <div class="manu-list hide">
+                    <ul>
+                        <li>New group</li>
+                        <li>Starred messages</li>
+                        <li>Setting</li>
+                        <li>Log out</li>
+                    </ul>
+                </div>
+
+                <div class="icons">
+                    <span data-testid="status-v3" data-icon="status-v3" class=""><svg version="1.1"
+                            id="ee51d023-7db6-4950-baf7-c34874b80976" x="0" y="0" viewBox="0 0 24 24" width="24"
+                            height="24" class="">
+                            <path fill="currentColor"
+                                d="M12 20.664a9.163 9.163 0 0 1-6.521-2.702.977.977 0 0 1 1.381-1.381 7.269 7.269 0 0 0 10.024.244.977.977 0 0 1 1.313 1.445A9.192 9.192 0 0 1 12 20.664zm7.965-6.112a.977.977 0 0 1-.944-1.229 7.26 7.26 0 0 0-4.8-8.804.977.977 0 0 1 .594-1.86 9.212 9.212 0 0 1 6.092 11.169.976.976 0 0 1-.942.724zm-16.025-.39a.977.977 0 0 1-.953-.769 9.21 9.21 0 0 1 6.626-10.86.975.975 0 1 1 .52 1.882l-.015.004a7.259 7.259 0 0 0-5.223 8.558.978.978 0 0 1-.955 1.185z">
+                            </path>
+                        </svg></span>
+                    <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                        <path fill="currentColor"
+                            d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z">
+                        </path>
+                    </svg>
+                    <svg id="doted" viewBox="0 0 24 24" width="24" height="24" class="">
+                        <path fill="currentColor"
+                            d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
+                        </path>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="main-search">
+
+                <div class="search-box">
+                    <div class="search-box-icon">
+                        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                    </div>
+                    <div class="search-box-input">
+                        <input type="text" id="search-box" onfocusout="myFocusOut()" onfocus="myFocus()"
+                            placeholder="Search or start new chart" autocomplete="off">
+                    </div>
+                </div>
+                <div class="search-control" title="Show/Hide only Group">
+                    <svg class="" id="contact-list-btn" viewBox="0 0 24 24" width="20" height="20"
+                        preserveAspectRatio="xMidYMid meet" class="">
+                        <path fill="currentColor" d="M10 18.1h4v-2h-4v2zm-7-12v2h18v-2H3zm3 7h12v-2H6v2z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="contact-part">
+                <div class="contact-list style-1" id="style-1">
+                    <!-- irfan box -->
+                    <div class="contact-box single" id="irfan">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/irfan.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Irfan ALi</h3>
+                                <p>G</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>9:30 AM</p>
+                        </div>
+                    </div>
+                    <!-- abdulla box  -->
+                    <div class="contact-box single" id="abdulla">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/abdulla.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Abdulla</h3>
+                                <p>a.o.a</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>10:09 AM</p>
+                        </div>
+                    </div>
+                    <!-- Web Technologies group  -->
+                    <div class="contact-box groud" id="webTec">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/group.png" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Web Technologies</h3>
+                                <p>You: ?</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>10:50 PM</p>
+                        </div>
+                    </div>
+                    <!-- sunsan group  -->
+                    <div class="contact-box groud" id="sunsan">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/sunsan.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Sunsan Group</h3>
+                                <p>You: kya hall ha</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>6/30/2022</p>
+                        </div>
+                    </div>
+                    <!-- waheed box -->
+                    <div class="contact-box single" id="waheed">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/waheed.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Waheed clg</h3>
+                                <p>or sanao</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>11:00 AM</p>
+                        </div>
+                    </div>
+                    <!-- mazhar box -->
+                    <div class="contact-box single" id="mazhar">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/mazhar.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Mazhar</h3>
+                                <p>kya hall ha</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>8/7/2022</p>
+                        </div>
+                    </div>
+                    <!-- enterprise system group  -->
+                    <div class="contact-box groud" id="enterpirse">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/erp.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Enterprise System</h3>
+                                <p>sir: Dear student you...</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>10:50 PM</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Hafiz mosin -->
+                    <div class="contact-box single" id="moshin">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/hmoshin.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Hafiz Mohsin</h3>
+                                <p>good night.</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>8/2/2022</p>
+                        </div>
+                    </div>
+                    
+                    <!-- irfan2 box -->
+                    <div class="contact-box single" id="irfan2">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/irfan2.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Irfan 2</h3>
+                                <p>a.o.a</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>7/31/2022</p>
+                        </div>
+                    </div>
+                    <!-- it infrastructure group  -->
+                    <div class="contact-box groud" id="infrasteucture">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/group.png" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>IT Infrastructure</h3>
+                                <p>Mohsin: hi</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>10:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <!-- ---------- groups ------------- -->
+                    <!-- bsit group  -->
+                    <div class="contact-box groud" id="bsit">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/bsit.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>BS IT (2019-23)</h3>
+                                <p>irfan: ok</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>8:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Mining group  -->
+                    <div class="contact-box groud" id="mining">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/group.png" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Data Mining</h3>
+                                <p>irfan: ok</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>11:00 PM</p>
+                        </div>
+                    </div>
+
+
+                    <!-- masood -->
+                    <div class="contact-box single" id="masood">
+                        <div class="left-side">
+                            <div class="img">
+                                <img src="img/masood.jpg" width="50" alt="image">
+                            </div>
+                            <div class="info">
+                                <h3>Masood clg</h3>
+                                <p>?</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <p>7/25/2022</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="chart-part hide_item" id="chart-container">
+            <!-- <h1 style="color: white;">adfaksdfjks</h1> -->
+            <div class="chart-container">
+                <div class="chart-manue manue">
+
+                    <div class="part11">
+                        <i id="back" style="color: var(--main-icon-fg); padding: 0px 2rem 0 1rem; font-size: 2rem; cursor: pointer;" class="fa-solid fa-arrow-left"></i>
+                        <span>
+                            <img src="img/mazhar.jpg" width="50" alt="photo">
+                        </span>
+    
+                        <span class="name">
+                            <h3>Mazhar</h3>
+                        </span>
+                    </div>
+
+                    <div class="contact-manu hided">
+                        <ul>
+                            <li>Contact info</li>
+                            <li>Select messages</li>
+                            <li>Close chat</li>
+                            <li>Mute notification</li>
+                            <li>Disappearing messages</li>
+                            <li>clear messages</li>
+                            <li>Delete chat</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="search-containered hided">
+                    <div class="search-cotainer">
+                       
+                        <div class="search-box">
+                            <div class="search-box-icon">
+                                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                            </div>
+                            <div class="search-box-input">
+                                <input type="search" id="search1" placeholder="Search here..." autocomplete="off">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                    <div class="part22">
+                         <label for="search1" id="search"><i class="fa-solid fa-magnifying-glass" ></i> </label>
+
+                        <i class="fa-solid fa-ellipsis-vertical" id="contact_manue"></i>
+                    </div>
+
+
+                </div>
+                
+                <div class="chart-body style-1" onscroll="myscroll()">
+     
+                    <div class="goto-end">
+                        <i class="fa-solid fa-angle-down"></i> 
+                    </div>
+
+                    <div class="shartmsg">
+                        <img src="img/shartmsg.PNG" alt="messages">
+                    </div>
+                   
+                    <!-- data  -->
+                    <div style="text-align: center;">
+                        <div class="date">
+                            <p>9/8/2022</p>
+                        </div>
+                    </div>
+                    <!-- received -->
+                    <div>
+                        <div class="received">
+                            <p class="msg">hi</p>
+                            <p class="time">7:16 AM</p>
+                        </div>
+
+                    </div>
+                    <!-- received -->
+                    <div>
+                        <div class="received">
+                            <p class="msg">kya hall ha</p>
+                            <p class="time">7:16 AM</p>
+                        </div>
+                    </div>
+                    
+                    <!-- sender  -->
+                    <div class="sender-container">
+                        <div class="received sender">
+                            <p class="msg">thak ap sanao</p>
+                            <p class="time">7:17 AM</p>
+                        </div>
+                    </div>
+                    <!-- sender  -->
+                    <div class="sender-container">
+                        <div class="received sender">
+                            <p class="msg">kasa yad kaya</p>
+                            <p class="time">7:16 AM</p>
+                        </div>
+                    </div>
+
+                    <!-- received -->
+                    <div>
+                        <div class="received">
+                            <p class="msg">wasa hi</p>
+                            <p class="time">7:17 AM</p>
+                        </div>
+                    </div>
+                    <!-- received  -->
+                    <div>
+                        <div class="received">
+                            <p class="msg">clg ja raha ho</p>
+                            <p class="time">7:17 AM</p>
+                        </div>
+                    </div>
+
+                    <!-- sender  -->
+                    <div class="sender-container">
+                        <div class="received sender">
+                            <p class="msg">nahi</p>
+                            <p class="time">7:20 AM</p>
+                        </div>
+                    </div>
+                    <!-- sender  -->
+                    <div class="sender-container">
+                        <div class="received sender">
+                            <p class="msg">ap?</p>
+                            <p class="time">7:20 AM</p>
+                        </div>
+                    </div>
+                    <!-- received -->
+                    <div>
+                        <div class="received">
+                            <p class="msg">nahi</p>
+                            <p class="time">7:16 AM</p>
+                        </div>
+
+                    </div>
+                    
+                    <!-- sender  -->
+                    <div class="sender-container">
+                        <div class="received sender">
+                            <p class="msg">ok</p>
+                            <p class="time">7:17 AM</p>
+                        </div>
+                    </div>
+                    <!-- sender  -->
+                    <div class="sender-container">
+                        <div class="received sender">
+                            <p class="msg">ap sanao kya hall ha ap ka</p>
+                            <p class="time">7:16 AM</p>
+                        </div>
+                    </div>
+
+                    <!-- received -->
+                    <div>
+                        <div class="received">
+                            <p class="msg">allah ka suker ha</p>
+                            <p class="time">7:17 AM</p>
+                        </div>
+                    </div>
+                    <!-- received  -->
+                    <div>
+                        <div class="received">
+                            <p class="msg">aj clg gay tha?</p>
+                            <p class="time">7:17 AM</p>
+                        </div>
+                    </div>
+
+                    <!-- sender  -->
+                    <div class="sender-container">
+                        <div class="received sender">
+                            <p class="msg">a.o.a</p>
+                            <p class="time">7:20 AM</p>
+                        </div>
+                    </div>
+
+                     
+                </div>
+
+                <div class="chart-footer manue">
+
+                    <svg viewBox="0 0 24 24" width="24" height="24" class="ekdr8vow dhq51u3o"><path fill="currentColor" d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z"></path></svg>
+
+                    <svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"></path></svg>
+                     
+                    <form autocomplete="off"> <input id="input" oninput="msgFocus()" type="text" placeholder="Type a message"> </form>
+
+                    <svg viewBox="0 0 24 24" id="onfocus" width="24" height="24" class=""><path fill="currentColor" d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"></path></svg>
+                     
+                    <svg viewBox="0 0 24 24" id="offocus" width="24" height="24" class=""><path fill="currentColor" d="M1.101 21.757 23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path></svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
